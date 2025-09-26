@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+  }
+  
+  /* ===== HEADER ===== */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+  }
+  
+  header .logo img {
+    height: 40px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #fdd835;
+  }
+  
+  /* ===== BANNER ===== */
+  .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+
+  }
+  
+  /* ===== SERVICES (VĂN PHÒNG – BIỆT THỰ – CĂN HỘ – NHÀ PHỐ) ===== */
+/* ===== SERVICES ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding-left: 5%;       /* bỏ padding 2 bên */
+  padding-right: 5%;
+  margin: 0;        /* bỏ margin mặc định */
+
+}
+
+.service {
+  padding: 50px 20px;
+  transition: background 0.3s ease;
+}
+
+/* màu xen kẽ */
+.service:nth-child(odd) {
+  background: #ffeb3b;   /* vàng đậm */
+}
+
+.service:nth-child(even) {
+  background: #fff176;   /* vàng nhạt */
+}
+
+.service i {
+  font-size: 60px;
+  color: #000;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.service p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+
+.service:hover {
+  background: #fdd835;
+  cursor: pointer;
+}
+
+  
+  /* ===== ABOUT (VỀ CÔNG TY) ===== */
+  .about {
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    
+  }
+  
+  .about h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .about-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .about .item {
+    position: relative;
+  }
+  
+  .about .item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .about .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    background: white; /* nền trắng bên ngoài */
+    padding: 2% 2%;     /* tạo khoảng trắng 5% 2 bên */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    background: #ffeb3b; /* nền vàng chỉ ở phần nội dung */
+    width: 100%;
+    padding: 2% 3%; /* padding bên trong khối vàng */
+  }
+  
+  .footer-col {
+    flex: 1;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+  
